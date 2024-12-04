@@ -7,15 +7,15 @@ from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 pd.set_option('display.max_columns', None)
 
-games1 = pd.read_csv('data/games2024.csv')
-games2 = pd.read_csv('data/games2025.csv')
+games1 = pd.read_csv('../data/raw/games2024.csv')
+games2 = pd.read_csv('../data/raw/games2025.csv')
 games = pd.concat([games1, games2], ignore_index=True)
 
-df1 = pd.read_csv('data/plays2024.csv')
+df1 = pd.read_csv('../data/raw/plays2024.csv')
 data1 = df1[['gameId', 'quarter', 'down', 'yardsToGo', 'gameClock', 'absoluteYardlineNumber', 'possessionTeam', 'defensiveTeam', 'preSnapHomeScore', 'preSnapVisitorScore', 'offenseFormation', 'preSnapHomeTeamWinProbability', 'preSnapVisitorTeamWinProbability']]#, 'receiverAlignment'
 result1 = df1['passResult']
 
-df2 = pd.read_csv('data/plays2025.csv')
+df2 = pd.read_csv('../data/raw/plays2025.csv')
 data2 = df2[['gameId', 'quarter', 'down', 'yardsToGo', 'gameClock', 'absoluteYardlineNumber', 'possessionTeam', 'defensiveTeam', 'preSnapHomeScore', 'preSnapVisitorScore', 'offenseFormation', 'preSnapHomeTeamWinProbability', 'preSnapVisitorTeamWinProbability']]#, 'receiverAlignment'
 result2 = df2['passResult']
 
