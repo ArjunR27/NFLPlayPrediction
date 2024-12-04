@@ -97,9 +97,9 @@ To evaluate the performance of our models, we used **accuracy** as the primary m
 
 ### Accuracy:
 Accuracy is calculated as:
-\[
-\text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Number of Predictions}}
-\]
+
+**Accuracy = (Number of Correct Predictions) / (Total Number of Predictions)**
+
 Given that the dataset is balanced, accuracy effectively represents the overall performance of the model without the need for additional metrics like precision or recall.
 
 ### Confusion Matrix:
@@ -116,6 +116,26 @@ The confusion matrix from our best-performing model (Random Forest) is shown bel
   - False Positives: 345 (Incorrectly predicted as Pass)
 
 This confusion matrix confirms the strong performance of the Random Forest model, with a minimal number of misclassifications. It demonstrates the model's ability to effectively distinguish between pass and run plays.
+
+---
+
+## Usage Instructions
+
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/ArjunR27/NFLPlayPrediction.git
+cd NFLPlayPrediction
+```
+
+### Step 2: Set up the environment
+Activate the environment using the `environment.yml` file:
+```bash
+conda env create -f environment.yml
+conda activate csc466
+```
+
+### Step 3: Explore `notebooks` directory
+Play around with the code we used for data exploration, data preprocessing, and model building
 
 ---
 
