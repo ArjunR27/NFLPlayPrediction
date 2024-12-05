@@ -75,13 +75,13 @@ To prepare the data for modeling, we performed the following steps:
 
 The table below summarizes the performance of different models used in this project. Each model's accuracy and mean cross-validation (CV) score are provided for comparison.
 
-| **Model**             | **Accuracy**         | **Mean CV Score**       |
+| **Model**             | **Accuracy (%)**     | **Mean CV Score (%)**   |
 |-----------------------|---------------------|------------------------|
-| Logistic Regression   | 0.6575              | 0.6638                 |
-| Random Forest         | 0.9075              | 0.8927                 |
-| Decision Tree         | 0.8864              | 0.8691                 |
-| XGBoost               | 0.9011              | 0.8889                 |
-| Neural Network        | 0.7088              | 0.6897                 |
+| Logistic Regression   | 65.75%              | 66.38%                 |
+| Random Forest         | 90.75%              | 89.27%                 |
+| Decision Tree         | 88.64%              | 86.91%                 |
+| XGBoost               | 90.11%              | 88.89%                 |
+| Neural Network        | 70.88%              | 68.97%                 |
 
 ### Observations:
 - **Random Forest** achieved the highest accuracy (90.75%) and the best mean CV score (89.27%), making it the most effective model in this experiment.
